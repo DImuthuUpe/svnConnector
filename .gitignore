@@ -1,0 +1,5 @@
+org.wso2.carbon.connector/.svn/*
+org.wso2.carbon.connector/.settings/*
+org.wso2.carbon.connector/.project
+org.wso2.carbon.connector/.classpath
+org.wso2.carbon.connector/target/*

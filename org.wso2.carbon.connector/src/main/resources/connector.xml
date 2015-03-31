@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<connector>
+    <component name="SvnConnector" package="org.wso2.carbon.connector" >
+        <dependency component="svn_operation"/>
+        <dependency component="svn_config"/>
+        <description>svn connector</description>
+    </component>
+</connector>

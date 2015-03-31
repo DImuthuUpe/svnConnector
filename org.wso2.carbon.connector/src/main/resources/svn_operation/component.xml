@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="svn_operation" type="synapse/template" >
+    <subComponents>
+        <component name="addGroupToProject">
+            <file>addGroupToProject.xml</file>
+            <description>Adds groups to projects</description>
+        </component>
+        <component name="addProject">
+            <file>addProject.xml</file>
+            <description>Adds groups to projects</description>
+        </component>
+        <component name="addUserToGroup">
+            <file>addUserToGroup.xml</file>
+            <description>Adds groups to projects</description>
+        </component>
+        <component name="createGroup">
+            <file>createGroup.xml</file>
+            <description>Adds groups to projects</description>
+        </component>
+        <component name="deleteGroup">
+            <file>deleteGroup.xml</file>
+            <description>Adds groups to projects</description>
+        </component>
+        <component name="deleteProject">
+            <file>deleteProject.xml</file>
+            <description>Adds groups to projects</description>
+        </component>
+        <component name="getGroupList">
+            <file>getGroupList.xml</file>
+            <description>Adds groups to projects</description>
+        </component>
+        <component name="getProjectList">
+            <file>getProjectList.xml</file>
+            <description>Adds groups to projects</description>
+        </component>
+        <component name="getUserList">
+            <file>getUserList.xml</file>
+            <description>Adds groups to projects</description>
+        </component>
+        <component name="removeGroupFromProject">
+            <file>removeGroupFromProject.xml</file>
+            <description>Adds groups to projects</description>
+        </component>
+        <component name="removeUserFromGroup">
+            <file>removeUserFromGroup.xml</file>
+            <description>Adds groups to projects</description>
+        </component>
+        <component name="getGroupsFromProject">
+            <file>getGroupsFromProject.xml</file>
+            <description>Adds groups to projects</description>
+        </component>
+        <component name="getUserGroupList">
+            <file>getUserGroupList.xml</file>
+            <description>Gets group list of a given user email</description>
+        </component>
+        <component name="removeUser">
+            <file>removeUser.xml</file>
+            <description>Removes user from all groups</description>
+        </component>
+        
+        
+    </subComponents>
+</component>

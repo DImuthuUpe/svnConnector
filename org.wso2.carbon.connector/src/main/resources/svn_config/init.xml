@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<template name="init" xmlns="http://ws.apache.org/ns/synapse">
+	<parameter name="uri" description="URI of the SVN instance." />
+	<sequence>
+		<property name="uri.var.svn.url" expression="$func:uri" />
+	</sequence>
+</template>

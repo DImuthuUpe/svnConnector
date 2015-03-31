@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<template name="removeUser" xmlns="http://ws.apache.org/ns/synapse">
+	<parameter name="mail" description="" />
+	<sequence>
+		<payloadFactory>
+			<format>
+				<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+					xmlns:svn="http://svn.dimuthuupeksha.com">
+					<soapenv:Header />
+					<soapenv:Body>
+						<svn:removeUser>
+							<svn:mail>$1</svn:mail>
+						</svn:removeUser>
+					</soapenv:Body>
+				</soapenv:Envelope>
+			</format>
+			<args>
+				<arg expression="$func:mail" />
+			</args>
+		</payloadFactory>
+
+		<property name="messageType" scope="axis2" value="text/xml" />
+
+		<property name="HTTP_METHOD" scope="axis2" value="POST" />
+		<header name="To" expression="$ctx:uri.var.svn.url" />
+		<header name="Action" value="urn:removeUser" />
+		<call>
+			<endpoint>
+				<default format="soap11">
+					<timeout>
+						<duration>60000</duration>
+						<responseAction>fault</responseAction>
+					</timeout>
+					<suspendOnFailure>
+						<initialDuration>2000</initialDuration>
+						<progressionFactor>1.0</progressionFactor>
+						<maximumDuration>3000</maximumDuration>
+					</suspendOnFailure>
+				</default>
+			</endpoint>
+		</call>
+
+	</sequence>
+</template>
